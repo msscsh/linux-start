@@ -17,7 +17,7 @@ gpg --list-secret-keys --keyid-format=long
 gpg --armor --export $GPP_ID_FROM_ABOVE_COMMAND
 ```
 
-## bind your public key to you github account
+## bind your public key to your github account
 https://github.com/settings/gpg/new
 
 
