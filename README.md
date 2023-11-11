@@ -8,3 +8,15 @@ A project to assist in configuring Linux machines for development. Do not use in
 ```
 sudo apt install git
 ```
+
+## generate GPG key for signed commits
+```
+gpg --default-new-key-algo rsa4096 --gen-key
+gpg --list-secret-keys --keyid-format=long
+gpg --armor --export $GPP_ID_FROM_ABOVE_COMMAND
+```
+
+## bind your public key to you github account
+https://github.com/settings/gpg/new
+
+
