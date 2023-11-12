@@ -9,6 +9,12 @@ A project to assist in configuring Linux machines for development. Do not use in
 sudo apt install git
 ```
 
+## Config git user
+```
+git config --global user.email "email@email.com"
+git config --global user.name "username"
+```
+
 ## generate GPG key for signed commits
 https://docs.github.com/pt/authentication/managing-commit-signature-verification/generating-a-new-gpg-key?platform=linux
 ```
@@ -23,4 +29,4 @@ https://github.com/settings/gpg/new
 
 Fill Key field. Copy the GPG key, from the above command, starting with -----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----. 
 
-## Config git user
+
