@@ -13,7 +13,16 @@ show_buttons() {
 result=$(show_buttons)
 
 if [ "$result" ]; then
+
 	whiptail --title "Selected button" --msgbox "You selected: $result" 10 60
+
+	if [ "$result" == "Rust" ]; then
+	    echo "Rust install"
+	fi
+
+	whiptail --title "Download completed" --msgbox "Download completed" 10 60
+
+	
 else
 	whiptail --title "Button not selected" --msgbox "No button was selected." 10 60
 fi
