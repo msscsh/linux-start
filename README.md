@@ -9,7 +9,7 @@ A project to assist in configuring Linux machines for development. Do not use in
 sudo apt install git
 ```
 
-## Config git user
+## config git user
 ```
 git config --global user.email "email@email.com"
 git config --global user.name "username"
