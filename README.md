@@ -23,3 +23,4 @@ https://github.com/settings/gpg/new
 
 Fill Key field. Copy the GPG key, from the above command, starting with -----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----. 
 
+## Config git user
