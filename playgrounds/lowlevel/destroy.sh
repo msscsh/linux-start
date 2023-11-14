@@ -1,4 +1,4 @@
 #!/bin/bash
 
-#undo init.sh script here
+#undo create.sh script here
 sudo rm -rf ~/dev/playgrounds/playground-lowlevel
