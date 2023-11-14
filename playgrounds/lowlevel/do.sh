@@ -2,6 +2,5 @@
 
 #Verify prerequisites
 
-mkdir -p ~/dev/playgrouds/
-cd ~/dev/playgrouds/
-git clone https://github.com/msscsh/playground-lowlevel.git
+mkdir -p ~/dev/playgrounds/
+git clone https://github.com/msscsh/playground-lowlevel.git ~/dev/playgrounds/playground-lowlevel/
