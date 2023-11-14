@@ -1,7 +1,7 @@
 # linux-start
 A project to assist in creating development environments with VirtualBox and Debian-based distros. To create the project, VirtualBox with Ubuntu was used. Do not use in production environments.
 
-# Steps
+# First steps
 ## Install prerequisite packages
   1. GCC 
 ```
@@ -50,7 +50,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 
 
-# Virtual box extra
+# Virtual box extra features(helpfull)
 ## Enable transfer area
   1. Start the VM
   2. Devices > Insert Guest Additions CD Image
@@ -65,3 +65,20 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
   6. Reboot guest
 
+
+# Now choose your path(The real begin)
+## Rust
+### Install Rust Enviroment
+```
+     sh ./enviroments/rust/install.sh
+```
+### Pull low level project
+```
+     sh ./playgrounds/lowlevel/do.sh
+```
+### Verify construction
+```
+     rustc ~/dev/playgrounds/playground-lowlevel/test/hello-world.rs -o ~/dev/playgrounds/ playground-lowlevel/test/hello-world
+     ~/dev/playgrounds/playground-lowlevel/test/hello-world
+     rm -f ~/dev/playgrounds/playground-lowlevel/test/hello-world
+```
