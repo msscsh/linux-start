@@ -72,13 +72,17 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
      sh ./enviroments/rust/install.sh
 ```
-### Pull low level project
+### Create low level project
 ```
-     sh ./playgrounds/lowlevel/do.sh
+     sh ./playgrounds/lowlevel/create.sh
 ```
 ### Verify construction
 ```
      rustc ~/dev/playgrounds/playground-lowlevel/test/hello-world.rs -o ~/dev/playgrounds/ playground-lowlevel/test/hello-world
      ~/dev/playgrounds/playground-lowlevel/test/hello-world
      rm -f ~/dev/playgrounds/playground-lowlevel/test/hello-world
+```
+### Destroy low level project(if you want, at any time)
+```
+     sh ./playgrounds/lowlevel/destroy.sh
 ```
