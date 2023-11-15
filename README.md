@@ -78,9 +78,9 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 ### Verify construction
 ```
-     rustc ~/dev/playgrounds/playground-lowlevel/test/hello-world.rs -o ~/dev/playgrounds/ playground-lowlevel/test/hello-world
-     ~/dev/playgrounds/playground-lowlevel/test/hello-world
-     rm -f ~/dev/playgrounds/playground-lowlevel/test/hello-world
+     rustc ~/dev/playgrounds/playground-lowlevel/test/rust.rs -o ~/dev/playgrounds/ playground-lowlevel/test/rust
+     ~/dev/playgrounds/playground-lowlevel/test/rust
+     rm -f ~/dev/playgrounds/playground-lowlevel/test/rust
 ```
 ### Destroy low level project(if you want, at any time)
 ```
