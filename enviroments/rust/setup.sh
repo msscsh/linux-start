@@ -1,5 +1,8 @@
 #!/bin/bash
 
 #Verify prerequisites
+echo $PWD
 sudo apt install rustc
-#Verify rust
+rustc ./enviroments/rust/rust-test.rs -o ./enviroments/rust/rust-test
+./enviroments/rust/rust-test
+rm -f ./enviroments/rust/rust-test
