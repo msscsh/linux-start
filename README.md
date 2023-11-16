@@ -2,18 +2,9 @@
 A project to assist in creating development environments with VirtualBox and Debian-based distros. To create the project, VirtualBox with Ubuntu was used. Do not use in production environments.
 
 # First steps
-## Install prerequisite packages
+## Install prerequisite packages (GCC, make, perl, curl and tree)
 ```
-  #GCC
-    sudo apt install gcc
-  #Make
-    sudo apt install make
-  #Perl
-    sudo apt install perl
-  #Curl
-    sudo apt install curl
-  #Tree
-    sudo apt install tree
+  sudo apt install gcc make perl curl tree
 ```
 
 ## Install/Config Git
