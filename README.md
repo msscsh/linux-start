@@ -3,21 +3,17 @@ A project to assist in creating development environments with VirtualBox and Deb
 
 # First steps
 ## Install prerequisite packages
-  1. GCC 
 ```
-  sudo apt install gcc
-```
-  2. Make
-```
-  sudo apt install make
-```
-  3. Perl
-```
-  sudo apt install perl
-```
-  4. Curl
-```
-  sudo apt install curl
+  #GCC
+    sudo apt install gcc
+  #Make
+    sudo apt install make
+  #Perl
+    sudo apt install perl
+  #Curl
+    sudo apt install curl
+  #Tree
+    sudo apt install tree
 ```
 
 ## Install/Config Git
@@ -53,6 +49,29 @@ A project to assist in creating development environments with VirtualBox and Deb
   sudo apt install sublime-text
 ```
 
+## Pull github project
+  1. Introducing the project organization structure
+
+```
+    ./dev/github/
+    ├── cypress
+    │   └── time-machine-in-cypress
+    ├── java
+    │   └── one-java-project
+    ├── node
+    │   └── node-project-001
+    └── rust
+        ├── rust-project-1
+        └── rust-project-2
+```
+  2. Pull github project
+```
+  sh bin/create-github-project.sh "project_type" "github_repository_name"
+```
+  3. Remove github project
+```
+    sh bin/remove-github-project.sh "project_language" "project_name"
+```
 
 # Virtual box extra features(helpfull)
 ## Enable transfer area
