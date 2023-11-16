@@ -70,7 +70,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 ## Rust
 ### Install Rust Enviroment
 ```
-     sh ./enviroments/rust/install.sh
+     sh ./enviroments/rust/setup.sh
 ```
 ### Create low level project
 ```
