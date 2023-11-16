@@ -74,7 +74,21 @@ A project to assist in creating development environments with VirtualBox and Deb
 ## Rust
 ### Install Rust Enviroment
 ```
-     sh ./enviroments/rust/setup.sh
+     sh ./enviroments/rust/install.sh
+```
+### Uninstall Rust Enviroment
+```
+     sh ./enviroments/rust/uninstall.sh
+```
+
+## Node
+### Install Node Enviroment
+```
+     sh ./enviroments/node/install.sh
+```
+### Uninstall Node Enviroment
+```
+     sh ./enviroments/node/uninstall.sh
 ```
 
 
