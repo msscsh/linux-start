@@ -15,6 +15,10 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
   sudo apt install perl
 ```
+  4. Curl
+```
+  sudo apt install curl
+```
 
 ## Install/Config Git
   1. Installing 
