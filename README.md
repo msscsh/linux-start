@@ -1,13 +1,28 @@
 # linux-start
 A project to assist in creating development environments with VirtualBox and Debian-based distros. To create the project, VirtualBox with Ubuntu was used. Do not use in production environments.
 
+# Features <!-- omit in toc -->
+
+- [First steps](#first-steps)
+    - [Install prerequisite packages](#install-prerequisite-packages)
+    - [Install and Config Git](#install-and-config-git)
+    - [Pull github project](#pull-github-project)
+- [Virtual box extra features](#virtual-box-extra-features)
+    - [Enable transfer area](#enable-transfer-area)
+- [Install enviroments](#install-enviroments)
+    - [Rust](#rust)
+    - [Node](#node)
+- [Create playgrounds](#create-playgrounds)
+    - [Low level languages](#low-level-languages)
+    - [High level languages](#high-level-languages)
+
 # First steps
 ## Install prerequisite packages (GCC, make, perl, curl, tree, ca-certificates and gnupg)
 ```
   sudo apt install gcc make perl curl tree ca-certificates gnupg
 ```
 
-## Install/Config Git
+## Install and Config Git
 ```
     #Installing
     sudo apt install git
@@ -75,7 +90,7 @@ A project to assist in creating development environments with VirtualBox and Deb
   6. reboot guest
 
 
-# Now choose your path(The real begin)
+# Install enviroments
 ## Rust
 ```
   #Install Rust Enviroment
