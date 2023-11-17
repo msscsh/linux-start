@@ -84,35 +84,32 @@ A project to assist in creating development environments with VirtualBox and Deb
 
 # Useful software catalog
 ## Sublime Text
-  1. Adding source 
 ```
-  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo gpg --dearmor -o /usr/share/keyrings/sublimehq-archive-keyring.gpg
-  echo "deb [signed-by=/usr/share/keyrings/sublimehq-archive-keyring.gpg] https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list > /dev/null
-  sudo apt update
-```
-  2. Installing sublime
-```
-  sudo apt install sublime-text
+    #Install
+    sh ./softwares/sublime-text/install.sh
+
+    #Uninstall
+    sh ./softwares/sublime-text/uninstall.sh
 ```
 
 
 # Install enviroments
 ## Rust
 ```
-  #Install Rust Enviroment
-  sh ./enviroments/rust/install.sh
+    #Install Rust Enviroment
+    sh ./enviroments/rust/install.sh
 
-  #Uninstall Rust Enviroment
-  sh ./enviroments/rust/uninstall.sh
+    #Uninstall Rust Enviroment
+    sh ./enviroments/rust/uninstall.sh
 ```
 
 ## Node
 ```
-  #Install Node Enviroment
-  sh ./enviroments/node/install.sh
+    #Install Node Enviroment
+    sh ./enviroments/node/install.sh
 
-  #Uninstall Node Enviroment
-  sh ./enviroments/node/uninstall.sh
+    #Uninstall Node Enviroment
+    sh ./enviroments/node/uninstall.sh
 ```
 
 
@@ -121,28 +118,28 @@ A project to assist in creating development environments with VirtualBox and Deb
 > [!IMPORTANT]\
 > To maintain projects, they must follow an organization rule, where projects are grouped by types (any name can be invented, but by convention we use the project type) and within the types folder we have the projects themselves sayings. Then enter "type" and "project_name" when using the scripts below.
 ```
-  sh bin/create-github-project.sh node my-node-project-name
+    sh bin/create-github-project.sh node my-node-project-name
 ```
 ```
-  sh bin/remove-github-project.sh rust my-rust-project-name
+    sh bin/remove-github-project.sh rust my-rust-project-name
 ```
 
 ## Low level languages
 ```
-  # Create low level project
-  sh ./playgrounds/lowlevel/create.sh
+    # Create low level project
+    sh ./playgrounds/lowlevel/create.sh
 ```
 ```
-  # Destroy low level project(if you want, at any time)
-  sh ./playgrounds/lowlevel/destroy.sh
+    # Destroy low level project(if you want, at any time)
+    sh ./playgrounds/lowlevel/destroy.sh
 ```
 
 ## High level languages
 ```
-  # Create high level project
-  sh ./playgrounds/highlevel/create.sh
+    # Create high level project
+    sh ./playgrounds/highlevel/create.sh
 ```
 ```
-  # Destroy high level project(if you want, at any time)
-  sh ./playgrounds/highlevel/destroy.sh
+    # Destroy high level project(if you want, at any time)
+    sh ./playgrounds/highlevel/destroy.sh
 ```
