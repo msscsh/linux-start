@@ -107,21 +107,12 @@ A project to assist in creating development environments with VirtualBox and Deb
 # Create code places
 
 ## Pull any github project
+> [!IMPORTANT]\
+> To maintain projects, they must follow an organization rule presented below, where projects are grouped by types (any name can be invented, but by convention we use the project type) and within the types folder we have the projects themselves sayings. Then enter "type" and "project_name" when using the scripts below.
 ```
-  #Introducing the project organization structure
-  ./dev/github/
-  ├── cypress
-  │   └── time-machine-in-cypress
-  └── rust
-      ├── rust-project-1
-      └── rust-project-2
-```
-```
-  #Pull any of yours github project with infos, e.g., project_type -> cypress, github_repository_name -> time-machine-in-cypress
   sh bin/create-github-project.sh cypress time-machine-in-cypress
 ```
 ```
-  #Remove github project, e.g., project_type -> rust, github_repository_name -> rust-project-2
   sh bin/remove-github-project.sh rust rust-project-2
 ```
 
