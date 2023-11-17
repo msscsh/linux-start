@@ -7,7 +7,7 @@ A project to assist in creating development environments with VirtualBox and Deb
     - [Install prerequisite packages](#install-prerequisite-packages)
     - [Install and Config Git](#install-and-config-git)
     - [Pull github project](#pull-github-project)
-- [Virtual box extra features](#virtual-box-extra-features)
+- [Virtual box extra features(helpfull)](#virtual-box-extra-features)
     - [Enable transfer area](#enable-transfer-area)
 - [Install enviroments](#install-enviroments)
     - [Rust](#rust)
@@ -17,9 +17,10 @@ A project to assist in creating development environments with VirtualBox and Deb
     - [High level languages](#high-level-languages)
 
 # First steps
-## Install prerequisite packages (GCC, make, perl, curl, tree, ca-certificates and gnupg)
+## Install prerequisite packages
 ```
-  sudo apt install gcc make perl curl tree ca-certificates gnupg
+    #GCC, make, perl, curl, tree, ca-certificates and gnupg
+    sudo apt install gcc make perl curl tree ca-certificates gnupg
 ```
 
 ## Install and Config Git
@@ -67,11 +68,11 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 ```
   #Pull github project with infos, e.g., project_type -> cypress, github_repository_name -> time-machine-in-cypress
-  sh bin/create-github-project.sh "project_type" "github_repository_name"
+  sh bin/create-github-project.sh cypress time-machine-in-cypress
 ```
 ```
-  #Remove github project
-  sh bin/remove-github-project.sh "project_language" "project_name"
+  #Remove github project, e.g., project_type -> rust, github_repository_name -> rust-project-2
+  sh bin/remove-github-project.sh rust rust-project-2
 ```
 
 # Virtual box extra features(helpfull)
