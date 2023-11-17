@@ -3,9 +3,9 @@ A project to assist in creating development environments with VirtualBox and Deb
 
 # Features <!-- omit in toc -->
 
-- [First steps](#first-steps)
+- [Preparing the VM to receive the project](#preparing-the-vm-to-receive-the-project)
     - [Install prerequisite packages](#install-prerequisite-packages)
-    - [Install and Config Git](#install-and-config-git)
+    - [Git Config](#git-config)
 - [Virtual box extra features](#virtual-box-extra-features)
     - [Enable transfer area](#enable-transfer-area)
 - [Useful software catalog](#useful-software-catalog)
@@ -18,33 +18,38 @@ A project to assist in creating development environments with VirtualBox and Deb
     - [Low level languages](#low-level-languages)
     - [High level languages](#high-level-languages)
 
-# First steps
+# Preparing the VM to receive the project
 ## Install prerequisite packages
 ```
-    #GCC, make, perl, curl, tree, ca-certificates and gnupg
     sudo apt install gcc make perl curl tree ca-certificates gnupg
 ```
 
-## Install and Config Git
+## Git Config
+
+<details>
+ <summary><b>:hammer_and_wrench: Step-by-step guide to prepare git</b></summary>
+
+1.  Installing
 ```
-    #Installing
     sudo apt install git
 ```
+2.  Config git user
 ```
-    #Config git user
     git config --global user.email "email@email.com"
     git config --global user.name "username"
 ```
+3.  Generate GPG key for signed commits
 ```
-    #Generate GPG key for signed commits
     gpg --default-new-key-algo rsa4096 --gen-key
     gpg --list-secret-keys --keyid-format=long
     gpg --armor --export $GPP_ID_FROM_ABOVE_COMMAND
 ```
+4.  Bind your public key to your github account  
 ```
-    #Bind your public key to your github account
     xdg-open https://github.com/settings/gpg/new
 ```
+
+</details>
 
 ## Pull me to help you from now on
 ```
