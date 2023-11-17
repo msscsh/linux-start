@@ -55,8 +55,8 @@ A project to assist in creating development environments with VirtualBox and Deb
   sh bin/create-github-project.sh "project_type" "github_repository_name"
 ```
 ```
-    #Remove github project
-    sh bin/remove-github-project.sh "project_language" "project_name"
+  #Remove github project
+  sh bin/remove-github-project.sh "project_language" "project_name"
 ```
 
 # Virtual box extra features(helpfull)
