@@ -8,23 +8,20 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 
 ## Install/Config Git
-  1. Installing 
 ```
+    #Installing
     sudo apt install git
-```
-  2. Config git user 
-```
+
+    #Config git user
     git config --global user.email "email@email.com"
     git config --global user.name "username"
-```
-  3. Generate GPG key for signed commits
-```
+
+    #Generate GPG key for signed commits
     gpg --default-new-key-algo rsa4096 --gen-key
     gpg --list-secret-keys --keyid-format=long
     gpg --armor --export $GPP_ID_FROM_ABOVE_COMMAND
-```
-  4. Bind your public key to your github account
-```
+
+    #Bind your public key to your github account
     xdg-open https://github.com/settings/gpg/new
 ```
 
