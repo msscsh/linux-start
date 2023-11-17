@@ -108,12 +108,12 @@ A project to assist in creating development environments with VirtualBox and Deb
 
 ## Pull any github project
 > [!IMPORTANT]\
-> To maintain projects, they must follow an organization rule presented below, where projects are grouped by types (any name can be invented, but by convention we use the project type) and within the types folder we have the projects themselves sayings. Then enter "type" and "project_name" when using the scripts below.
+> To maintain projects, they must follow an organization rule, where projects are grouped by types (any name can be invented, but by convention we use the project type) and within the types folder we have the projects themselves sayings. Then enter "type" and "project_name" when using the scripts below.
 ```
-  sh bin/create-github-project.sh cypress time-machine-in-cypress
+  sh bin/create-github-project.sh node my-node-project-name
 ```
 ```
-  sh bin/remove-github-project.sh rust rust-project-2
+  sh bin/remove-github-project.sh rust my-rust-project-name
 ```
 
 ## Low level languages
