@@ -61,39 +61,37 @@ A project to assist in creating development environments with VirtualBox and Deb
 
 # Virtual box extra features(helpfull)
 ## Enable transfer area
-  1. Start the VM
-  2. Devices > Insert Guest Additions CD Image
-  3. Reboot guest
+  1. start the VM
+  2. devices > Insert Guest Additions CD Image
+  3. reboot guest
   4. navite to VBox folder
 ```
-      cd /media/$USER/VBox_GAs_*
+  cd /media/$USER/VBox_GAs_*
 ```
   5. execute VBox script
 ```
-     sh /media/$USER/VBox_GAs_7.0.6/VBoxLinuxAdditions.run
+  sh /media/$USER/VBox_GAs_7.0.6/VBoxLinuxAdditions.run
 ```
-  6. Reboot guest
+  6. reboot guest
 
 
 # Now choose your path(The real begin)
 ## Rust
-### Install Rust Enviroment
 ```
-     sh ./enviroments/rust/install.sh
-```
-### Uninstall Rust Enviroment
-```
-     sh ./enviroments/rust/uninstall.sh
+  #Install Rust Enviroment
+  sh ./enviroments/rust/install.sh
+
+  #Uninstall Rust Enviroment
+  sh ./enviroments/rust/uninstall.sh
 ```
 
 ## Node
-### Install Node Enviroment
 ```
-     sh ./enviroments/node/install.sh
-```
-### Uninstall Node Enviroment
-```
-     sh ./enviroments/node/uninstall.sh
+  #Install Node Enviroment
+  sh ./enviroments/node/install.sh
+
+  #Uninstall Node Enviroment
+  sh ./enviroments/node/uninstall.sh
 ```
 
 
@@ -109,11 +107,11 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 
 ## High level languages
-### Create high level project
 ```
-     sh ./playgrounds/highlevel/create.sh
+  # Create high level project
+  sh ./playgrounds/highlevel/create.sh
 ```
-### Destroy high level project(if you want, at any time)
 ```
-     sh ./playgrounds/highlevel/destroy.sh
+  # Destroy high level project(if you want, at any time)
+  sh ./playgrounds/highlevel/destroy.sh
 ```
