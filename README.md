@@ -57,7 +57,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 # Virtual box extra features
 ## Enable transfer area
 <details>
- <summary><b>:hammer_and_wrench: Step-by-stepStep-by-step guide to enable transfer area</b></summary>
+ <summary><b>:hammer_and_wrench: Step-by-step guide to enable transfer area</b></summary>
 
 1.  start the VM.
 2.  devices > Insert Guest Additions CD Image
