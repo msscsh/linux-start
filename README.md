@@ -7,7 +7,7 @@ A project to assist in creating development environments with VirtualBox and Deb
     - [Install prerequisite packages](#install-prerequisite-packages)
     - [Install and Config Git](#install-and-config-git)
     - [Pull github project](#pull-github-project)
-- [Virtual box extra features(helpfull)](#virtual-box-extra-features)
+- [Virtual box extra features](#virtual-box-extra-features)
     - [Enable transfer area](#enable-transfer-area)
 - [Install enviroments](#install-enviroments)
     - [Rust](#rust)
@@ -75,7 +75,7 @@ A project to assist in creating development environments with VirtualBox and Deb
   sh bin/remove-github-project.sh rust rust-project-2
 ```
 
-# Virtual box extra features(helpfull)
+# Virtual box extra features
 ## Enable transfer area
   1. start the VM
   2. devices > Insert Guest Additions CD Image
