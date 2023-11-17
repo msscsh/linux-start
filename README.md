@@ -57,21 +57,24 @@ A project to assist in creating development environments with VirtualBox and Deb
 # Virtual box extra features
 ## Enable transfer area
 <details>
- <summary><b>:hammer_and_wrench: Step-by-step guide to enable transfer area</b></summary>
-  1. start the VM
-  2. devices > Insert Guest Additions CD Image
-  3. reboot guest
-  4. navigate to VBox folder
+ <summary><b>:hammer_and_wrench: Step-by-stepStep-by-step guide to enable transfer area</b></summary>
+
+1.  start the VM.
+2.  devices > Insert Guest Additions CD Image
+3.  reboot guest
+4.  navigate to VBox folder:  
 ```
-  cd /media/$USER/VBox_GAs_*
+    cd /media/$USER/VBox_GAs_*
 ```
-  5. execute VBox script
+5.  execute VBox script: 
 ```
-  sh /media/$USER/VBox_GAs_7.0.6/VBoxLinuxAdditions.run
+    sh /media/$USER/VBox_GAs_7.0.6/VBoxLinuxAdditions.run
 ```
-  6. devices > Shared Clipboard > Bidirectional
-  7. reboot guest
+6.  devices > Shared Clipboard > Bidirectional
+7.  reboot guest
+
 </details>
+
 
 # Useful software catalog
 ## Sublime Text
@@ -108,7 +111,6 @@ A project to assist in creating development environments with VirtualBox and Deb
 
 
 # Create code places
-
 ## Pull any github project
 > [!IMPORTANT]\
 > To maintain projects, they must follow an organization rule, where projects are grouped by types (any name can be invented, but by convention we use the project type) and within the types folder we have the projects themselves sayings. Then enter "type" and "project_name" when using the scripts below.
