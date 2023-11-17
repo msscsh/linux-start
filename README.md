@@ -41,26 +41,21 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 
 ## Pull github project
-  1. Introducing the project organization structure
-
 ```
-    ./dev/github/
-    ├── cypress
-    │   └── time-machine-in-cypress
-    ├── java
-    │   └── one-java-project
-    ├── node
-    │   └── node-project-001
-    └── rust
-        ├── rust-project-1
-        └── rust-project-2
+  #Introducing the project organization structure
+  ./dev/github/
+  ├── cypress
+  │   └── time-machine-in-cypress
+  └── rust
+      ├── rust-project-1
+      └── rust-project-2
 ```
-  2. Pull github project
 ```
+  #Pull github project with infos, e.g., project_type -> cypress, github_repository_name -> time-machine-in-cypress
   sh bin/create-github-project.sh "project_type" "github_repository_name"
 ```
-  3. Remove github project
 ```
+    #Remove github project
     sh bin/remove-github-project.sh "project_language" "project_name"
 ```
 
