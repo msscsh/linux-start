@@ -3,7 +3,7 @@
 #Verify prerequisites
 echo $PWD
 sudo apt update
-sudo apt install rustc
+yes | sudo apt install rustc
 
 rustc --version
 
