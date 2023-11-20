@@ -23,7 +23,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 # Preparing the VM to receive the project
 ## Install prerequisite packages
 ```
-    sudo apt install gcc make perl curl tree ca-certificates gnupg jq
+    sudo apt install gcc make perl curl tree ca-certificates gnupg jq python3-pip
 ```
 
 ## Enabling seconds on the clock
