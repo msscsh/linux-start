@@ -5,6 +5,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 
 - [Preparing the VM to receive the project](#preparing-the-vm-to-receive-the-project)
     - [Install prerequisite packages](#install-prerequisite-packages)
+    - [Enabling seconds on the clock](#enabling-seconds-on-the-clock)
     - [Git Config](#git-config)
     - [Pull me to help you from now on](#pull-me-to-help-you-from-now-on)
 - [Virtual box extra features](#virtual-box-extra-features)
@@ -23,6 +24,11 @@ A project to assist in creating development environments with VirtualBox and Deb
 ## Install prerequisite packages
 ```
     sudo apt install gcc make perl curl tree ca-certificates gnupg jq
+```
+
+## Enabling seconds on the clock
+```
+    gsettings set org.gnome.desktop.interface clock-show-seconds true
 ```
 
 ## Git Config
