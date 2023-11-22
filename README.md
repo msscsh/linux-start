@@ -16,14 +16,14 @@ A project to assist in creating development environments with VirtualBox and Deb
     - [Rust](#rust)
     - [Node](#node)
 - [Create code places](#create-code-places)
-    - [Pull any github project](#pull-any-github-project)
+    - [Github action to project](#github-action-to-project)
     - [Low level languages](#low-level-languages)
     - [High level languages](#high-level-languages)
 
 # Preparing the VM to receive the project
 ## Install prerequisite packages
 ```
-    sudo apt install gcc make perl curl tree ca-certificates gnupg jq python3-pip
+    sudo apt install gcc make perl curl tree ca-certificates gnupg jq python3-pip htop
 ```
 
 ## Enabling seconds on the clock
@@ -96,6 +96,9 @@ A project to assist in creating development environments with VirtualBox and Deb
 
     #Uninstall
     sh ./softwares/sublime-text/uninstall.sh
+
+    #Config theme in sublime
+    cd /home/marvin/.config/sublime-text/Packages/User/
 ```
 
 
@@ -120,14 +123,17 @@ A project to assist in creating development environments with VirtualBox and Deb
 
 
 # Create code places
-## Pull any github project
+## Github action to project
 > [!IMPORTANT]\
 > To maintain projects, they must follow an organization rule, where projects are grouped by types (any name can be invented, but by convention we use the project type) and within the types folder we have the projects themselves sayings. Then enter "type" and "project_name" when using the scripts below.
 ```
-    sh bin/create-github-project.sh node my-node-project-name
+    sh bin/github-create.sh node my-node-project-name
 ```
 ```
-    sh bin/remove-github-project.sh rust my-rust-project-name
+    sh bin/github-remove.sh rust my-rust-project-name
+```
+```
+    sh bin/github-status-all.sh rust my-rust-project-name
 ```
 
 ## Low level languages
