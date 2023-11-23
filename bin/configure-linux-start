@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "STARTING LINUX CONFIGURATION"
+echo "USER=$1"
+USER_ROOT_DIR=/home/$1
+
+echo "Writing variables to the user's bashrc file"
+echo "" >> $USER_ROOT_DIR/.bashrc
+echo "" >> $USER_ROOT_DIR/.bashrc
+echo "#Linux start" >> $USER_ROOT_DIR/.bashrc
+echo "export LINUX_START_HOME=/home/\$USER/dev/linux-start" >> $USER_ROOT_DIR/.bashrc
+echo "export PATH=\$PATH:\$LINUX_START_HOME/bin" >> $USER_ROOT_DIR/.bashrc
+
+
+LINUX_START_HOME=$USER_ROOT_DIR/dev/linux-start
+
+echo "Enabling utility tools"
+
+#Controll menu
+sudo chmod +x $LINUX_START_HOME/bin/menu
+[ -x $LINUX_START_HOME/bin/menu ] && echo "Enabled tool: menu" || echo "Tool 'menu' cannot be enabled"
+
+#Github action permissions
+sudo chmod +x $LINUX_START_HOME/bin/github-create
+[ -x $LINUX_START_HOME/bin/menu ] && echo "Enabled tool: github-create" || echo "Tool 'github-create' cannot be enabled"
+sudo chmod +x $LINUX_START_HOME/bin/github-remove
+[ -x $LINUX_START_HOME/bin/menu ] && echo "Enabled tool: github-remove" || echo "Tool 'github-remove' cannot be enabled"
+sudo chmod +x $LINUX_START_HOME/bin/github-status-all
+[ -x $LINUX_START_HOME/bin/menu ] && echo "Enabled tool: github-status-all" || echo "Tool 'github-status-all' cannot be enabled"
