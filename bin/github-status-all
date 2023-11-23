@@ -4,7 +4,14 @@ DIRS=$(find ~/dev -maxdepth 4 -type d -name ".git")
 
 for DIR in $DIRS; do
     ROOT_DIR=$(dirname "$DIR")
-    echo $ROOT_DIR
+    echo ""
+    echo "Running on: $ROOT_DIR"
+    echo ""
     git -C $ROOT_DIR status
+
+    echo ""
+    echo "Next(Any key) Cancel(Crtl+C)"
+    echo ""
+
     read REPLY
 done
