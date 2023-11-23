@@ -1,7 +1,14 @@
 #!/bin/bash
 
 echo "STARTING LINUX CONFIGURATION"
-echo "USER=$1"
+
+if [ -z "$1" ]; then
+  echo "You must inform your current user in the script."
+  exit 1
+else
+  echo "USER=$1"
+fi
+
 USER_ROOT_DIR=/home/$1
 
 echo "Writing variables to the user's bashrc file"
