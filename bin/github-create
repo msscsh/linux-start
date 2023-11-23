@@ -6,14 +6,23 @@ PROJECT_HOME_DIR=~/dev/github/$1/$2
 
 mkdir -p $PROJECT_HOME_DIR
 
+GITHUB_USER=(git config --global user.name)
+if [ -z "$GITHUB_USER" ]; then
+  echo 'You must set your github user: git config --global user.name "foo" '
+  exit 1
+fi
+
+echo "Cloning with user $GITHUB_USER"
+echo ""
+
 if [ -z "$3" ]; then
-  echo "No branch informed, using the repository's default branch"
+  echo "No branch informed, using the repository's default branch."
   echo ""
-  git clone https://github.com/msscsh/$2.git $PROJECT_HOME_DIR
+  git clone https://github.com/$GITHUB_USER/$2.git $PROJECT_HOME_DIR
 else
   echo "Trying to clone branch: $3"
   echo ""
-  git clone -b $3 https://github.com/msscsh/$2.git $PROJECT_HOME_DIR
+  git clone -b $3 https://github.com/$GITHUB_USER/$2.git $PROJECT_HOME_DIR
 fi
 
 echo ""
