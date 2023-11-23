@@ -62,7 +62,6 @@ A project to assist in creating development environments with VirtualBox and Deb
     git config --global commit.gpgSign true
 ```
 
-
 </details>
 
 ## Pull me to help you from now on
