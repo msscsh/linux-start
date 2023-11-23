@@ -57,6 +57,11 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
     xdg-open https://github.com/settings/gpg/new
 ```
+5. Automatically adding signatures to commits
+```
+    git config --global commit.gpgSign true
+```
+
 
 </details>
 
