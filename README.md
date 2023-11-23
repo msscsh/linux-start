@@ -8,8 +8,10 @@ A project to assist in creating development environments with VirtualBox and Deb
     - [Enabling seconds on the clock](#enabling-seconds-on-the-clock)
     - [Git Config](#git-config)
     - [Pull me to help you from now on](#pull-me-to-help-you-from-now-on)
+    - [Execute my basic configuration](#execute-my-basic-configuration)
 - [Virtual box extra features](#virtual-box-extra-features)
     - [Enable transfer area](#enable-transfer-area)
+    - [Increase video memory](#increase-video-memory)
 - [Useful software catalog](#useful-software-catalog)
     - [Sublime Text](#sublime-text)
 - [Install enviroments](#install-enviroments)
@@ -64,7 +66,11 @@ A project to assist in creating development environments with VirtualBox and Deb
     cd ~/dev/
     git clone https://github.com/msscsh/linux-start.git
 ```
-
+## Execute my basic configuration
+```
+    sudo chmod +x configure-linux-start
+    sudo ~/dev/linux-start/bin/configure-linux-start $USER
+```
 
 # Virtual box extra features
 ## Enable transfer area
@@ -84,6 +90,18 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 6.  devices > Shared Clipboard > Bidirectional
 7.  reboot guest
+
+</details>
+
+## Increase video memory
+<details>
+ <summary><b>:hammer_and_wrench: Step-by-step guide to increase video memory</b></summary>
+
+1.  with the the VM stoped.
+2.  configuration > Monitor
+3.  increase video memory (the higher the value, the higher the possible resolution)
+4.  start the VM
+5.  press, "host key" + "f"
 
 </details>
 
@@ -127,13 +145,13 @@ A project to assist in creating development environments with VirtualBox and Deb
 > [!IMPORTANT]\
 > To maintain projects, they must follow an organization rule, where projects are grouped by types (any name can be invented, but by convention we use the project type) and within the types folder we have the projects themselves sayings. Then enter "type" and "project_name" when using the scripts below.
 ```
-    sh bin/github-create.sh node my-node-project-name
+    sh bin/github-create node my-node-project-name
 ```
 ```
-    sh bin/github-remove.sh rust my-rust-project-name
+    sh bin/github-remove rust my-rust-project-name
 ```
 ```
-    sh bin/github-status-all.sh rust my-rust-project-name
+    sh bin/github-status-all rust my-rust-project-name
 ```
 
 ## Low level languages
