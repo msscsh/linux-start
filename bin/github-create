@@ -1,6 +1,21 @@
 #!/bin/bash
+echo ""
+echo "Type: $1; Project name: $2; Branch: $3"
 
-mkdir -p ~/dev/github/$1
-cd ~/dev/github/$1
-git clone https://github.com/msscsh/$2.git
-cd -
+PROJECT_HOME_DIR=~/dev/github/$1/$2
+
+mkdir -p $PROJECT_HOME_DIR
+
+if [ -z "$3" ]; then
+  echo "No branch informed, using the repository's default branch"
+  echo ""
+  git clone https://github.com/msscsh/$2.git $PROJECT_HOME_DIR
+else
+  echo "Trying to clone branch: $3"
+  echo ""
+  git clone -b $3 https://github.com/msscsh/$2.git $PROJECT_HOME_DIR
+fi
+
+echo ""
+echo "Cloned into: $PROJECT_HOME_DIR"
+echo ""
