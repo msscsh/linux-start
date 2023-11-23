@@ -1,0 +1,3 @@
+
+Enabling seconds on the clock(Ubuntu)
+gsettings set org.gnome.desktop.interface clock-show-seconds true
