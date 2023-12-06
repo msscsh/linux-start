@@ -143,13 +143,13 @@ A project to assist in creating development environments with VirtualBox and Deb
 > [!IMPORTANT]\
 > To maintain projects, they must follow an organization rule, where projects are grouped by types (any name can be invented, but by convention we use the project type) and within the types folder we have the projects themselves sayings. Then enter "type" and "project_name" when using the scripts below.
 ```
-    sh bin/github-create node my-node-project-name
+    bin/github-create node my-node-project-name
 ```
 ```
-    sh bin/github-remove rust my-rust-project-name
+    bin/github-remove rust my-rust-project-name
 ```
 ```
-    sh bin/github-status-all rust my-rust-project-name
+    bin/github-status-all rust my-rust-project-name
 ```
 
 ## Low level languages
