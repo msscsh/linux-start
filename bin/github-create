@@ -6,7 +6,7 @@ PROJECT_HOME_DIR=~/dev/github/$1/$2
 
 mkdir -p $PROJECT_HOME_DIR
 
-GITHUB_USER=(git config --global user.name)
+GITHUB_USER=$(git config --global user.name)
 if [ -z "$GITHUB_USER" ]; then
   echo 'You must set your github user: git config --global user.name "foo" '
   exit 1
