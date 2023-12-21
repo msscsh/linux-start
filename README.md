@@ -84,7 +84,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 5.  execute VBox script: 
 ```
-    sh /media/$USER/VBox_GAs_7.0.6/VBoxLinuxAdditions.run
+    sudo sh VBoxLinuxAdditions.run
 ```
 6.  devices > Shared Clipboard > Bidirectional
 7.  reboot guest
