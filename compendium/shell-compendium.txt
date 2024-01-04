@@ -1,8 +1,9 @@
 
 Enabling seconds on the clock(Ubuntu)
-gsettings set org.gnome.desktop.interface clock-show-seconds true
+	gsettings set org.gnome.desktop.interface clock-show-seconds true
 
-tail -f /var/log/syslog
+Best way to see system's information
+	tail -f /var/log/syslog
 
 Coolest way to watch folders in terminal
-tree -L 1
+	tree -L 1
