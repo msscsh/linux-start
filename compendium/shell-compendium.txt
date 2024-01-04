@@ -7,3 +7,6 @@ Best way to see system's information
 
 Coolest way to watch folders in terminal
 	tree -L 1
+
+Check this file
+	file -i
