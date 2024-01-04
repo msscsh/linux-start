@@ -2,10 +2,17 @@
 echo ""
 echo "Type: $1; Project name: $2; Branch: $3"
 
-PROJECT_HOME_DIR=~/dev/github/$1/$2
 
-if [ -z "$3" ]; then
-  echo "No branch"
+if [ "$1" = "" ]; then
+    echo "It is necessary to inform a grouper for the project. Generally the type Eg: python; java;"
+    exit 1
+elif [ "$2" = "" ]; then
+    echo "You need to enter the name of the project in git"
+    exit 1
+fi
+
+if [ "$3" = "" ]; then
+  PROJECT_HOME_DIR=~/dev/github/$1/$2
 else
   PROJECT_HOME_DIR=~/dev/github/$1/$3/$2
 fi
