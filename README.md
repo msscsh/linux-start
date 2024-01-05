@@ -66,7 +66,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 ## Execute my basic configuration
 ```
-    sudo chmod +x configure-linux-start
+    sudo chmod +x ~/dev/linux-start/bin/configure-linux-start
     sudo ~/dev/linux-start/bin/configure-linux-start $USER
 ```
 
