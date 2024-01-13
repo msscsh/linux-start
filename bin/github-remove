@@ -1,3 +1,11 @@
 #!/bin/bash
 
+if [ "$1" = "" ]; then
+    echo "It is necessary to inform a grouper for the project. Generally the type Eg: python; java;"
+    exit 1
+elif [ "$2" = "" ]; then
+    echo "You need to enter the name of the project in git"
+    exit 1
+fi
+
 sudo rm -r ~/dev/github/$1/$2
