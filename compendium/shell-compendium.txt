@@ -10,3 +10,7 @@ Coolest way to watch folders in terminal
 
 Check this file
 	file -i
+
+Shell extended
+	shopt -s extglob
+	rm -rf !(/home/qintess/dev/bin/EAP6/standalone/deployments/loginunico-1.0.8.war)
