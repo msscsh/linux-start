@@ -16,8 +16,10 @@ Shell extended
 	rm -rf !(/home/qintess/dev/bin/EAP6/standalone/deployments/loginunico-1.0.8.war)
 
 Process and stuff
-
 	pgrep program_name
 	pidof program_name
 	pgrep -P <father_PID> | xargs -I {} ps -p {} -o pid,ppid,cmd
 	pstree -p <father_PID>
+
+Find file in folder hierarchy
+	find / -name $FILE_NAME 2>/dev/null
