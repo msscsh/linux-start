@@ -24,7 +24,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 # Preparing the VM to receive the project
 ## Install prerequisite packages
 ```
-    sudo apt install gcc make perl curl tree ca-certificates gnupg jq python3-pip htop python3-virtualenv
+    sudo apt install gcc make perl curl tree ca-certificates gnupg jq python3-pip htop python3-virtualenv inotify-tools
 ```
 
 ## Git Config
