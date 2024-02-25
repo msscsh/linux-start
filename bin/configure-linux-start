@@ -18,6 +18,7 @@ echo ""
 echo "" >> $USER_ROOT_DIR/.bashrc
 echo "" >> $USER_ROOT_DIR/.bashrc
 echo "#Linux start" >> $USER_ROOT_DIR/.bashrc
+echo "export USER_ROOT_DIR=/home/\$1" >> $USER_ROOT_DIR/.bashrc
 echo "export LINUX_START_HOME=/home/\$USER/dev/linux-start" >> $USER_ROOT_DIR/.bashrc
 echo "export PATH=\$PATH:\$LINUX_START_HOME/bin" >> $USER_ROOT_DIR/.bashrc
 
