@@ -23,3 +23,6 @@ Process and stuff
 
 Find file in folder hierarchy
 	find / -name $FILE_NAME 2>/dev/null
+
+Update shared librarys cache
+	sudo ldconfig
