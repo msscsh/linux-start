@@ -3,6 +3,7 @@ sudo apt install -y python3-pip build-essential git python3 python3-dev ffmpeg l
 
 #android
 sudo apt-get install autoconf automake libtool
+sudo apt-get install libssl-dev
 
 sudo pip3 install --upgrade cython pillow
 sudo pip3 install buildozer
