@@ -24,5 +24,16 @@ Process and stuff
 Find file in folder hierarchy
 	find / -name $FILE_NAME 2>/dev/null
 
+Find content in folder structure files
+	grep -r $STRING_TO_FIND .
+	find . -type f -exec grep $STRING_TO_FIND {} +
+
 Update shared librarys cache
 	sudo ldconfig
+
+Getting a cert with openssl
+	openssl s_client -showcerts -connect hostname.location.com:443 > hostname.location.com.pem
+
+StickY packages
+	sudo apt install --reinstall $PACKAGE_NAME
+	sudo apt-get remove $PACKAGE_NAME
