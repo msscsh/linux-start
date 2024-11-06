@@ -37,3 +37,6 @@ Getting a cert with openssl
 StickY packages
 	sudo apt install --reinstall $PACKAGE_NAME
 	sudo apt-get remove $PACKAGE_NAME
+
+Advanced executable infos
+	readelf -a ./executable
