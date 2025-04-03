@@ -54,7 +54,7 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
 5. Automatically adding signatures to commits
 ```
-    git config --global user.signingkey $GPP_ID_FROM_ABOVE_COMMAND
+    git config --global user.signingkey $GPG_FINGERPRINT
     git config --global commit.gpgSign true
 ```
 
