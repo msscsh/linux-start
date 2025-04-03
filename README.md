@@ -45,7 +45,8 @@ A project to assist in creating development environments with VirtualBox and Deb
 ```
     gpg --default-new-key-algo rsa4096 --gen-key
     gpg --list-secret-keys --keyid-format=long
-    gpg --armor --export $GPP_ID_FROM_ABOVE_COMMAND
+    GPG_FINGERPRINT=$(gpg --list-secret-keys --keyid-format=long | awk '/sec +rsa/{getline; print $1}')
+    gpg --armor --export $GPG_FINGERPRINT
 ```
 4.  Bind your public key to your github account  
 ```
