@@ -40,3 +40,6 @@ StickY packages
 
 Advanced executable infos
 	readelf -a ./executable
+
+Remote SSH entrys
+	last
