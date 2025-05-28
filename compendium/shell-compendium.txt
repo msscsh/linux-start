@@ -46,3 +46,6 @@ Remote SSH entrys
 
 Reboot a x11 plasma when something goes wrong
 	systemctl --user restart plasma-plasmashell
+
+Ditro upgrade
+	sudo apt-get dist-upgrade
